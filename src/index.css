@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Sora", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-brand-navy: #0a1a30;
+  --color-brand-navy-light: #0f2a4d;
+  --color-brand-blue: #12386b;
+  --color-brand-blue-light: #1d4f8f;
+  --color-brand-blue-50: #eef4fb;
+  --color-brand-yellow: #f5b400;
+  --color-brand-yellow-dark: #d69700;
+  --color-brand-yellow-light: #ffd668;
+  --color-brand-black: #0a0a0a;
+  --color-brand-ink: #14181f;
+  --color-brand-gray: #6b7280;
+  --color-brand-gray-light: #f4f5f7;
+
+  --shadow-soft: 0 4px 24px -4px rgba(10, 26, 48, 0.10);
+  --shadow-card: 0 8px 30px -8px rgba(10, 26, 48, 0.18);
+  --shadow-lift: 0 20px 40px -12px rgba(10, 26, 48, 0.28);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-brand-ink);
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: var(--color-brand-yellow);
+  color: var(--color-brand-navy);
+}
+
+/* Focus visibility for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--color-brand-yellow);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-gray-light);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-blue-light);
+  border-radius: 999px;
+}
+
+.container-px {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .container-px {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.bg-noise {
+  background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.06) 1px, transparent 0);
+  background-size: 22px 22px;
+}
