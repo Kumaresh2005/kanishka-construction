@@ -28,8 +28,10 @@ export default function Services() {
   return (
     <>
       <SEO
-        title="Our Services"
-        description="Explore Kanishka Constructions' full range of services: Residential, Commercial, Industrial, Welding & Metal Fabrication, Structural Steel, Renovation, Interior, Infrastructure and Engineering."
+        title="Construction & Welding Services | Kanishka Constructions"
+        description="Comprehensive building and fabrication services by Kanishka Constructions & Subrat Sarkar: Residential, Commercial, Industrial, Welding & Metal Fabrication, Structural Steel PEB, Piping, and Civil Works in Maharashtra."
+        keywords="welding services Gadchiroli, structural steel fabrication Nagpur, welding contractor Maharashtra, PEB shed manufacturer, pipeline welding, civil construction, residential construction Ashti Chamorshi, commercial builders"
+        canonical="/services"
       />
       <PageHeader
         title="Our Construction Services"

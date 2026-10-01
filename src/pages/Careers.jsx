@@ -47,8 +47,10 @@ export default function Careers() {
   return (
     <>
       <SEO
-        title="Careers & Internships"
-        description="Explore internship opportunities at Kanishka Constructions — openings for Architect, AutoCAD, Civil Engineering, Site Operations, Quantity Surveying, and Cost Estimator interns in Nagpur."
+        title="Careers & Civil Engineering Internships | Kanishka Constructions"
+        description="Explore civil engineering, architectural, site supervisor, and welding job opportunities and internships at Kanishka Constructions across Maharashtra."
+        keywords="construction jobs Gadchiroli, civil engineering internships Nagpur, AutoCAD jobs Maharashtra, site supervisor jobs, Kanishka constructions careers"
+        canonical="/careers"
       />
       <PageHeader
         title="Careers at Kanishka Constructions"

@@ -1,4 +1,14 @@
 User-agent: *
 Allow: /
 
+# Googlebot specific directives
+User-agent: Googlebot
+Allow: /
+
+# Bingbot specific directives
+User-agent: Bingbot
+Allow: /
+
+# XML Sitemap
 Sitemap: https://www.kanishkaconstructions.com/sitemap.xml
+Host: https://www.kanishkaconstructions.com

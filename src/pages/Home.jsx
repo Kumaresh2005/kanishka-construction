@@ -13,8 +13,11 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="Premium Construction Company in Nagpur"
-        description="Kanishka Constructions Pvt. Ltd. delivers premium residential, commercial, industrial and infrastructure construction projects across Nagpur and Maharashtra. Get a free consultation today."
+        title="Building Contractor & Welding Services | Subrat Sarkar"
+        description="Kanishka Constructions Pvt. Ltd. led by Subrat Sarkar is a premier construction contractor in Maharashtra, providing residential & commercial building, certified welding, structural steel, and turnkey project execution."
+        keywords="Kanishka Constructions, Subrat Sarkar, Subrat Sarkar contractor, construction company Gadchiroli, builders in Ashti Chamorshi, contractor Nagpur, welding services Maharashtra, structural steel fabrication, PEB industrial sheds, civil works Maharashtra"
+        canonical="/"
+        image="/project_photos/owner/owner.jpeg"
       />
       <Hero />
       <ServicesPreview />

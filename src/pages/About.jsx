@@ -24,8 +24,25 @@ export default function About() {
   return (
     <>
       <SEO
-        title="About Us"
-        description="Learn about Kanishka Constructions Pvt. Ltd. — our story, mission, values and the leadership team driving construction excellence in Nagpur."
+        title="About Subrat Sarkar & Kanishka Constructions"
+        description="Learn about Kanishka Constructions Pvt. Ltd. and founder Subrat Sarkar — experienced contractor providing civil construction, welding, structural steel, and turnkey project management in Maharashtra."
+        keywords="Subrat Sarkar, Subrat Sarkar contractor, Kanishka Constructions about, construction team Gadchiroli, building contractor Nagpur, civil engineers Maharashtra"
+        canonical="/about"
+        image="/project_photos/owner/owner.jpeg"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "ProfilePage",
+          "mainEntity": {
+            "@type": "Person",
+            "name": "Subrat Sarkar",
+            "jobTitle": "Contractor & Construction Professional",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Kanishka Constructions Pvt. Ltd."
+            },
+            "description": "Subrat Sarkar is an experienced contractor involved in construction and welding-related work, managing projects from planning to execution and completion."
+          }
+        }}
       />
       <PageHeader
         title="About Kanishka Constructions"

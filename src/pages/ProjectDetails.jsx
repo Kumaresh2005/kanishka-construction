@@ -25,9 +25,26 @@ export default function ProjectDetails() {
   return (
     <>
       <SEO
-        title={project.name}
+        title={`${project.name} | Construction Portfolio`}
         description={project.description}
+        keywords={`${project.name}, ${project.category} construction, ${project.location}, Kanishka Constructions projects`}
         image={project.heroImage}
+        canonical={`/projects/${project.id}`}
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "CreativeWork",
+          "name": project.name,
+          "description": project.description,
+          "image": project.heroImage,
+          "creator": {
+            "@type": "Organization",
+            "name": "Kanishka Constructions Pvt. Ltd."
+          },
+          "locationCreated": {
+            "@type": "Place",
+            "name": project.location
+          }
+        }}
       />
 
       {/* Hero */}

@@ -19,8 +19,10 @@ export default function Projects() {
   return (
     <>
       <SEO
-        title="Our Projects"
-        description="Browse Kanishka Constructions' portfolio of residential, commercial, industrial, renovation and infrastructure projects across Nagpur and Maharashtra."
+        title="Construction Portfolio & Completed Projects | Kanishka Constructions"
+        description="Browse completed residential, commercial, industrial, and infrastructure projects delivered with precision by Kanishka Constructions across Maharashtra."
+        keywords="construction portfolio Nagpur, completed construction projects Maharashtra, commercial buildings Gadchiroli, residential villas Ashti, industrial construction portfolio"
+        canonical="/projects"
       />
       <PageHeader
         title="Our Projects"

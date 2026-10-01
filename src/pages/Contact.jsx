@@ -62,8 +62,10 @@ export default function Contact() {
   return (
     <>
       <SEO
-        title="Contact Us"
-        description="Get in touch with Kanishka Constructions Pvt. Ltd. in Nagpur. Call, WhatsApp, email or request a free construction quote for your project today."
+        title="Contact Us & Get Free Quote | Kanishka Constructions"
+        description="Contact Kanishka Constructions Pvt. Ltd. and Subrat Sarkar for construction inquiries, welding and structural fabrication quotes, or site visits in Gadchiroli, Nagpur, and Maharashtra. Call +91 78238 16184."
+        keywords="contact Kanishka Constructions, construction quote Nagpur, Subrat Sarkar contact, builder phone number Gadchiroli, construction office Ashti Chamorshi"
+        canonical="/contact"
       />
       <PageHeader
         title="Get In Touch"

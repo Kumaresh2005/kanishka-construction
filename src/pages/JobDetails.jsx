@@ -46,8 +46,32 @@ export default function JobDetails() {
   return (
     <>
       <SEO
-        title={`${job.title} — Careers`}
-        description={`Apply for the ${job.title} (${job.stipend}) at Kanishka Constructions in ${job.location}. ${job.experience}. ${job.openings} opening(s) available.`}
+        title={`${job.title} Job Opening | Kanishka Constructions`}
+        description={`Apply for ${job.title} at Kanishka Constructions in ${job.location}. ${job.experience}. ${job.openings} opening(s) available.`}
+        keywords={`${job.title}, construction jobs ${job.location}, civil engineering jobs, Kanishka constructions openings`}
+        canonical={`/careers/${job.id}`}
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "JobPosting",
+          "title": job.title,
+          "description": job.description,
+          "datePosted": job.postedDate,
+          "employmentType": job.type === "Internship" ? "INTERN" : "FULL_TIME",
+          "hiringOrganization": {
+            "@type": "Organization",
+            "name": "Kanishka Constructions Pvt. Ltd.",
+            "sameAs": "https://www.kanishkaconstructions.com"
+          },
+          "jobLocation": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": job.location,
+              "addressRegion": "Maharashtra",
+              "addressCountry": "IN"
+            }
+          }
+        }}
       />
 
       <section className="relative bg-brand-navy pt-32 pb-14 md:pt-40 md:pb-20 overflow-hidden">
